@@ -1,0 +1,35 @@
+Stage D - 482 patches from <WORK_ROOT>\stage_c\out
+  solar_channels=computed  shadow_channel=zeros
+  utc_offset=+11  max_invalid_frac=0.5  edge_buffer_px=0
+  source=donor pack <WORK_ROOT>\stage_d\donors_v6
+  out=<WORK_ROOT>\stage_d\out_v6
+
+  [25/482] written 400, errors 0
+  [50/482] written 800, errors 0
+  [75/482] written 1200, errors 0
+  [100/482] written 1600, errors 0
+  [125/482] written 2000, errors 0
+  [150/482] written 2400, errors 0
+  [175/482] written 2800, errors 0
+  [200/482] written 3200, errors 0
+  [225/482] written 3600, errors 0
+  [250/482] written 4000, errors 0
+  [275/482] written 4400, errors 0
+  [300/482] written 4800, errors 0
+  [325/482] written 5200, errors 0
+  [350/482] written 5600, errors 0
+  [375/482] written 6000, errors 0
+  [400/482] written 6400, errors 0
+  [425/482] written 6800, errors 0
+  [450/482] written 7200, errors 0
+  [475/482] written 7600, errors 0
+
+==================================================================
+patches processed        : 482
+samples written          : 7712
+  of which DOY 351       : 1928  (lst head masked)
+skipped, too much invalid: 0
+skipped, no V4 donor     : 0
+invalid pixel fraction   : median 0.00%  mean 2.95%  max 47.93%
+mask cross-checks vs V4  : 0 checked, 0 mismatched
+==================================================================

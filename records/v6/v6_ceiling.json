@@ -1,0 +1,103 @@
+{
+ "corpus": "stage_d\\out_v6",
+ "checkpoint": "stage_d\\models\\v6_best.pt",
+ "mask_corpus": null,
+ "mask_diff_pct_test": null,
+ "split_seed": 42,
+ "limit": 0,
+ "baseline_gate": "PASS",
+ "pixels_test": 192801072,
+ "rmse": {
+  "baseline": 4.469144283280317,
+  "deployable_calibration_val_fit": 4.442284968068541,
+  "ceiling_output_calibration": 4.442043559863772,
+  "oracle_label_bin": 4.233599283972177,
+  "oracle_exposure_class": 4.459392271277543,
+  "oracle_class_x_label": 4.153103488495526
+ },
+ "by_class": {
+  "canopy_shaded": {
+   "pixels": 20383072,
+   "share_pct": 10.57207399759686,
+   "bias_C": -0.24912280767748954,
+   "rmse_C": 4.584015232753272,
+   "rmse_after_joint_oracle_C": 4.058999640345481
+  },
+  "building_shaded": {
+   "pixels": 24839990,
+   "share_pct": 12.883740604927757,
+   "bias_C": 0.14929397390202737,
+   "rmse_C": 6.1793295552789305,
+   "rmse_after_joint_oracle_C": 5.660623045317392
+  },
+  "sunlit": {
+   "pixels": 147578010,
+   "share_pct": 76.54418539747539,
+   "bias_C": -0.31847984842632976,
+   "rmse_C": 4.094435957123424,
+   "rmse_after_joint_oracle_C": 3.855495768657055
+  }
+ },
+ "by_label_bin_5C": {
+  "10-15": {
+   "pixels": 1010414,
+   "bias_C": 1.5047395279018887
+  },
+  "15-20": {
+   "pixels": 6501115,
+   "bias_C": 2.05198456858552
+  },
+  "20-25": {
+   "pixels": 10789720,
+   "bias_C": 1.6553860569916998
+  },
+  "25-30": {
+   "pixels": 16539508,
+   "bias_C": 1.091318777143255
+  },
+  "30-35": {
+   "pixels": 12555484,
+   "bias_C": 2.089309760017173
+  },
+  "35-40": {
+   "pixels": 11105604,
+   "bias_C": 1.920500238746389
+  },
+  "40-45": {
+   "pixels": 13995349,
+   "bias_C": 0.37906446691651674
+  },
+  "45-50": {
+   "pixels": 15268779,
+   "bias_C": -0.5034409521447589
+  },
+  "50-55": {
+   "pixels": 21094936,
+   "bias_C": -1.5888507691682048
+  },
+  "55-60": {
+   "pixels": 28675462,
+   "bias_C": -1.3020149820861624
+  },
+  "60-65": {
+   "pixels": 25571935,
+   "bias_C": -1.2379802416079908
+  },
+  "65-70": {
+   "pixels": 17429653,
+   "bias_C": -1.3813975336984294
+  },
+  "70-75": {
+   "pixels": 10791372,
+   "bias_C": -1.247028578273076
+  },
+  "75-80": {
+   "pixels": 1412704,
+   "bias_C": -2.830476679985452
+  },
+  "80-85": {
+   "pixels": 59037,
+   "bias_C": -4.69713376726903
+  }
+ }
+}

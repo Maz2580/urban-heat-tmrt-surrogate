@@ -1,0 +1,26 @@
+{
+ "<=1": {
+  "rms_1px": 6.168855140552186,
+  "rms_2px": 8.204436794138035,
+  "v5_actual": 5.11,
+  "verdict": "at the 1px floor"
+ },
+ "2-4": {
+  "rms_1px": 4.271171107837293,
+  "rms_2px": 5.874349042403411,
+  "v5_actual": 3.98,
+  "verdict": "at the 1px floor"
+ },
+ "5-12": {
+  "rms_1px": 3.385083459833036,
+  "rms_2px": 4.617855952116629,
+  "v5_actual": 3.33,
+  "verdict": "at the 1px floor"
+ },
+ ">12": {
+  "rms_1px": 1.6734712875867366,
+  "rms_2px": 2.277065523835186,
+  "v5_actual": 3.62,
+  "verdict": "REAL HEADROOM"
+ }
+}

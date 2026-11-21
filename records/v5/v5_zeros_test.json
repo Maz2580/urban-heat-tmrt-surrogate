@@ -1,0 +1,13 @@
+{
+ "rmse": {
+  "tmrt": 6.23847023294045,
+  "lst": 2.4663963644465743,
+  "tair_sparse": NaN
+ },
+ "pixels": {
+  "tmrt": 192801072,
+  "lst": 115514734,
+  "tair_sparse": 0
+ },
+ "corpus": "<WORK_ROOT>\\stage_d\\out_zeros"
+}

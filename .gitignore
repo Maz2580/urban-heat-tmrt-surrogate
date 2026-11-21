@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+urban_heat_data/
+*.onnx
+*.pt
+*.npz
+*.tar
+*.tif
+models/

@@ -1,0 +1,146 @@
+====================================================================
+Urban Heat V5 training  [tag=v5_zeros]
+====================================================================
+device       : cuda  (NVIDIA GeForce RTX 5090)
+torch        : 2.13.0+cu130
+precision    : bf16 autocast (no GradScaler needed)
+corpus       : <WORK_ROOT>\stage_d\out_zeros
+manifest     : 7,712 rows, 482 patches
+  has_tmrt   : 7,712
+  has_lst    : 4,682
+split(seed=42) : {'train': 6176, 'test': 768, 'val': 768}
+ch3 sin_alt  : mean 0.0000   <-- ZERO (ablation corpus)
+tair_sparse  : all-NaN target with LOSS_WEIGHT 10.0 -> head is inert (V4 behaviour, kept)
+parameters   : 24,499,379
+====================================================================
+epoch   1/100  train=3301.225  val=2834.724  rmse[tmrt=45.285 lst=28.014]  lr=1.00e-04  113s
+  -> best so far (45.285 C); checkpointed
+epoch   2/100  train=2798.660  val=2318.961  rmse[tmrt=41.242 lst=24.857]  lr=9.99e-05  90s
+  -> best so far (41.242 C); checkpointed
+epoch   3/100  train=2356.354  val=1984.108  rmse[tmrt=39.271 lst=20.976]  lr=9.98e-05  90s
+  -> best so far (39.271 C); checkpointed
+epoch   4/100  train=1846.589  val=1648.109  rmse[tmrt=36.453 lst=17.853]  lr=9.96e-05  90s
+  -> best so far (36.453 C); checkpointed
+epoch   5/100  train=1450.300  val=1772.482  rmse[tmrt=37.167 lst=19.791]  lr=9.94e-05  90s
+epoch   6/100  train=1115.516  val=1241.919  rmse[tmrt=31.498 lst=15.853]  lr=9.91e-05  89s
+  -> best so far (31.498 C); checkpointed
+epoch   7/100  train=809.708  val=847.591  rmse[tmrt=26.485 lst=12.116]  lr=9.88e-05  90s
+  -> best so far (26.485 C); checkpointed
+epoch   8/100  train=543.442  val=286.588  rmse[tmrt=15.650 lst=6.402]  lr=9.84e-05  89s
+  -> best so far (15.650 C); checkpointed
+epoch   9/100  train=349.474  val=349.288  rmse[tmrt=17.443 lst=6.685]  lr=9.80e-05  90s
+epoch  10/100  train=204.254  val=150.578  rmse[tmrt=10.244 lst=6.823]  lr=9.76e-05  89s
+  -> best so far (10.244 C); checkpointed
+epoch  11/100  train=124.578  val=154.299  rmse[tmrt=11.684 lst=4.156]  lr=9.70e-05  90s
+epoch  12/100  train=94.347  val=100.619  rmse[tmrt=8.843 lst=4.777]  lr=9.65e-05  89s
+  -> best so far (8.843 C); checkpointed
+epoch  13/100  train=81.617  val=97.551  rmse[tmrt=9.072 lst=3.898]  lr=9.59e-05  89s
+epoch  14/100  train=80.455  val=136.250  rmse[tmrt=11.139 lst=3.483]  lr=9.52e-05  90s
+epoch  15/100  train=72.654  val=136.325  rmse[tmrt=11.284 lst=3.197]  lr=9.46e-05  89s
+epoch  16/100  train=69.139  val=79.628  rmse[tmrt=7.859 lst=4.175]  lr=9.38e-05  89s
+  -> best so far (7.859 C); checkpointed
+epoch  17/100  train=62.084  val=72.728  rmse[tmrt=7.783 lst=3.465]  lr=9.30e-05  90s
+  -> best so far (7.783 C); checkpointed
+epoch  18/100  train=58.663  val=141.259  rmse[tmrt=11.294 lst=3.748]  lr=9.22e-05  90s
+epoch  19/100  train=56.817  val=49.315  rmse[tmrt=6.425 lst=2.809]  lr=9.14e-05  90s
+  -> best so far (6.425 C); checkpointed
+epoch  20/100  train=53.555  val=132.652  rmse[tmrt=11.118 lst=2.940]  lr=9.05e-05  89s
+epoch  21/100  train=50.060  val=71.589  rmse[tmrt=7.871 lst=3.198]  lr=8.95e-05  89s
+epoch  22/100  train=48.186  val=302.361  rmse[tmrt=16.997 lst=3.315]  lr=8.85e-05  89s
+epoch  23/100  train=47.335  val=119.987  rmse[tmrt=10.575 lst=2.852]  lr=8.75e-05  89s
+epoch  24/100  train=45.292  val=118.744  rmse[tmrt=10.567 lst=2.788]  lr=8.64e-05  89s
+epoch  25/100  train=43.138  val=52.210  rmse[tmrt=6.735 lst=2.624]  lr=8.54e-05  89s
+epoch  26/100  train=41.810  val=184.984  rmse[tmrt=13.341 lst=2.688]  lr=8.42e-05  90s
+epoch  27/100  train=40.796  val=94.369  rmse[tmrt=9.155 lst=3.202]  lr=8.31e-05  89s
+epoch  28/100  train=39.825  val=103.500  rmse[tmrt=9.784 lst=2.938]  lr=8.19e-05  89s
+epoch  29/100  train=38.818  val=501.541  rmse[tmrt=21.872 lst=4.337]  lr=8.06e-05  90s
+epoch  30/100  train=37.486  val=217.601  rmse[tmrt=14.638 lst=2.211]  lr=7.94e-05  89s
+epoch  31/100  train=35.695  val=48.351  rmse[tmrt=6.541 lst=2.359]  lr=7.81e-05  89s
+epoch  32/100  train=34.408  val=602.246  rmse[tmrt=24.304 lst=2.540]  lr=7.68e-05  90s
+epoch  33/100  train=33.983  val=68.784  rmse[tmrt=7.772 lst=2.894]  lr=7.55e-05  89s
+epoch  34/100  train=33.175  val=48.833  rmse[tmrt=6.623 lst=2.185]  lr=7.41e-05  89s
+epoch  35/100  train=31.889  val=174.164  rmse[tmrt=12.666 lst=3.804]  lr=7.27e-05  89s
+epoch  36/100  train=31.738  val=368.266  rmse[tmrt=19.075 lst=2.342]  lr=7.13e-05  90s
+epoch  37/100  train=30.809  val=469.956  rmse[tmrt=21.545 lst=2.619]  lr=6.99e-05  89s
+epoch  38/100  train=30.286  val=167.219  rmse[tmrt=12.582 lst=3.077]  lr=6.84e-05  89s
+epoch  39/100  train=29.002  val=106.336  rmse[tmrt=10.114 lst=2.262]  lr=6.69e-05  89s
+epoch  40/100  train=28.697  val=1476.837  rmse[tmrt=38.204 lst=2.293]  lr=6.55e-05  89s
+epoch  41/100  train=27.988  val=92.820  rmse[tmrt=9.358 lst=2.323]  lr=6.39e-05  89s
+epoch  42/100  train=27.640  val=122.065  rmse[tmrt=10.853 lst=2.315]  lr=6.24e-05  90s
+epoch  43/100  train=26.829  val=307.469  rmse[tmrt=17.504 lst=2.018]  lr=6.09e-05  89s
+epoch  44/100  train=26.551  val=320.666  rmse[tmrt=17.792 lst=2.106]  lr=5.94e-05  89s
+epoch  45/100  train=25.778  val=1034.588  rmse[tmrt=32.076 lst=2.272]  lr=5.78e-05  89s
+epoch  46/100  train=25.686  val=886.407  rmse[tmrt=29.635 lst=2.857]  lr=5.63e-05  89s
+epoch  47/100  train=24.834  val=215.930  rmse[tmrt=14.611 lst=1.983]  lr=5.47e-05  89s
+epoch  48/100  train=24.462  val=245.515  rmse[tmrt=15.568 lst=1.988]  lr=5.31e-05  89s
+epoch  49/100  train=24.095  val=321.239  rmse[tmrt=17.860 lst=2.007]  lr=5.16e-05  90s
+epoch  50/100  train=24.160  val=353.648  rmse[tmrt=18.771 lst=2.086]  lr=5.00e-05  90s
+epoch  51/100  train=23.275  val=1325.495  rmse[tmrt=36.360 lst=2.320]  lr=4.84e-05  89s
+epoch  52/100  train=23.067  val=263.595  rmse[tmrt=16.185 lst=2.000]  lr=4.69e-05  89s
+epoch  53/100  train=22.770  val=212.133  rmse[tmrt=14.508 lst=1.970]  lr=4.53e-05  89s
+epoch  54/100  train=22.559  val=462.277  rmse[tmrt=21.529 lst=2.013]  lr=4.37e-05  89s
+epoch  55/100  train=22.120  val=725.566  rmse[tmrt=27.010 lst=1.946]  lr=4.22e-05  89s
+epoch  56/100  train=21.708  val=4372.197  rmse[tmrt=66.360 lst=2.031]  lr=4.06e-05  89s
+epoch  57/100  train=21.857  val=652.031  rmse[tmrt=25.580 lst=2.020]  lr=3.91e-05  89s
+epoch  58/100  train=21.743  val=896.256  rmse[tmrt=30.054 lst=1.953]  lr=3.76e-05  89s
+epoch  59/100  train=20.855  val=5615.858  rmse[tmrt=74.847 lst=1.992]  lr=3.61e-05  89s
+epoch  60/100  train=21.139  val=233.323  rmse[tmrt=15.224 lst=1.894]  lr=3.45e-05  89s
+epoch  61/100  train=20.716  val=458.558  rmse[tmrt=21.458 lst=1.891]  lr=3.31e-05  91s
+epoch  62/100  train=20.525  val=3102.732  rmse[tmrt=55.874 lst=1.934]  lr=3.16e-05  93s
+epoch  63/100  train=20.396  val=374.981  rmse[tmrt=19.352 lst=1.991]  lr=3.01e-05  91s
+epoch  64/100  train=20.179  val=232.691  rmse[tmrt=15.254 lst=1.982]  lr=2.87e-05  89s
+epoch  65/100  train=19.816  val=342.343  rmse[tmrt=18.529 lst=1.907]  lr=2.73e-05  89s
+epoch  66/100  train=19.640  val=734.450  rmse[tmrt=27.187 lst=1.979]  lr=2.59e-05  89s
+epoch  67/100  train=19.475  val=228.643  rmse[tmrt=15.067 lst=1.884]  lr=2.45e-05  89s
+epoch  68/100  train=19.478  val=435.406  rmse[tmrt=20.879 lst=1.877]  lr=2.32e-05  89s
+epoch  69/100  train=19.404  val=1636.700  rmse[tmrt=40.646 lst=1.840]  lr=2.19e-05  90s
+epoch  70/100  train=18.744  val=570.329  rmse[tmrt=23.940 lst=1.942]  lr=2.06e-05  89s
+epoch  71/100  train=19.084  val=296.620  rmse[tmrt=17.187 lst=1.919]  lr=1.94e-05  90s
+epoch  72/100  train=18.948  val=770.758  rmse[tmrt=27.824 lst=1.971]  lr=1.81e-05  89s
+epoch  73/100  train=18.897  val=315.941  rmse[tmrt=17.757 lst=1.883]  lr=1.69e-05  89s
+epoch  74/100  train=18.501  val=384.781  rmse[tmrt=19.624 lst=1.866]  lr=1.58e-05  90s
+epoch  75/100  train=18.718  val=2571.045  rmse[tmrt=50.935 lst=1.866]  lr=1.46e-05  89s
+epoch  76/100  train=18.490  val=326.400  rmse[tmrt=18.057 lst=1.928]  lr=1.36e-05  89s
+epoch  77/100  train=18.172  val=969.881  rmse[tmrt=31.237 lst=1.923]  lr=1.25e-05  89s
+epoch  78/100  train=18.120  val=3981.464  rmse[tmrt=63.408 lst=1.866]  lr=1.15e-05  90s
+epoch  79/100  train=18.057  val=988.606  rmse[tmrt=31.567 lst=1.922]  lr=1.05e-05  89s
+epoch  80/100  train=17.961  val=1397.720  rmse[tmrt=37.565 lst=1.896]  lr=9.55e-06  89s
+epoch  81/100  train=18.147  val=5037.374  rmse[tmrt=71.289 lst=1.908]  lr=8.65e-06  89s
+epoch  82/100  train=17.429  val=312.085  rmse[tmrt=17.645 lst=1.874]  lr=7.78e-06  89s
+epoch  83/100  train=17.516  val=2502.383  rmse[tmrt=50.258 lst=1.868]  lr=6.96e-06  89s
+epoch  84/100  train=18.014  val=992.045  rmse[tmrt=31.581 lst=1.901]  lr=6.18e-06  89s
+epoch  85/100  train=17.509  val=1108.602  rmse[tmrt=33.403 lst=1.900]  lr=5.45e-06  89s
+epoch  86/100  train=17.355  val=700.348  rmse[tmrt=26.509 lst=1.915]  lr=4.76e-06  89s
+epoch  87/100  train=17.542  val=2299.051  rmse[tmrt=48.174 lst=1.862]  lr=4.11e-06  89s
+epoch  88/100  train=17.382  val=1743.781  rmse[tmrt=41.945 lst=1.840]  lr=3.51e-06  89s
+epoch  89/100  train=17.292  val=1695.514  rmse[tmrt=41.346 lst=1.893]  lr=2.96e-06  90s
+epoch  90/100  train=17.386  val=1560.070  rmse[tmrt=39.647 lst=1.853]  lr=2.45e-06  89s
+epoch  91/100  train=17.302  val=1359.657  rmse[tmrt=37.025 lst=1.863]  lr=1.99e-06  89s
+epoch  92/100  train=17.321  val=1911.187  rmse[tmrt=43.908 lst=1.865]  lr=1.57e-06  89s
+epoch  93/100  train=17.157  val=799.586  rmse[tmrt=28.347 lst=1.874]  lr=1.20e-06  89s
+epoch  94/100  train=17.159  val=3058.195  rmse[tmrt=55.567 lst=1.882]  lr=8.86e-07  89s
+epoch  95/100  train=17.217  val=1402.184  rmse[tmrt=37.589 lst=1.887]  lr=6.16e-07  89s
+epoch  96/100  train=17.188  val=2157.852  rmse[tmrt=46.664 lst=1.883]  lr=3.94e-07  89s
+epoch  97/100  train=17.534  val=2474.677  rmse[tmrt=49.981 lst=1.896]  lr=2.22e-07  89s
+epoch  98/100  train=17.298  val=1992.336  rmse[tmrt=44.833 lst=1.884]  lr=9.87e-08  89s
+epoch  99/100  train=17.601  val=3357.513  rmse[tmrt=58.225 lst=1.920]  lr=2.47e-08  89s
+epoch 100/100  train=17.062  val=826.269  rmse[tmrt=28.821 lst=1.895]  lr=0.00e+00  89s
+
+====================================================================
+TEST SET
+====================================================================
+  tmrt           RMSE 6.238 C   [192,801,072 px]
+  lst            RMSE 2.466 C   [115,514,734 px]
+  tair_sparse    RMSE nan C   [0 px]
+
+  NOTE: V4's pass targets (tmrt <= 3.0 C) were set against the OLD
+  labels, whose mean was ~20 C. The V5 labels average ~50 C with a
+  far wider range, so an RMSE compared across the two is not
+  like-for-like. Judge V5 on renders and on held-out validation,
+  not against a threshold calibrated for a different target.
+
+files written:
+  v5_zeros_best.pt            294.3 MB
+  v5_zeros_last.pt            294.3 MB
+  v5_zeros_history.json         0.0 MB
+  v5_zeros_test.json            0.0 MB

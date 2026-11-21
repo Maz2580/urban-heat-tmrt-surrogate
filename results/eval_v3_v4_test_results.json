@@ -1,0 +1,34 @@
+{
+  "method": "Offline ONNX inference against V3-notebook seed=42 test split (1176 patches, by v2_patch_id 80/10/10).",
+  "host": "AMD EPYC 9474F 16 vCPUs, onnxruntime 1.21.1 CPUExecutionProvider, serving container, 2026-05-08",
+  "results": [
+    {
+      "version": "V3",
+      "n_patches": 1176,
+      "pixel_count": 277337964,
+      "rmse_pixel_weighted_c": 2.725,
+      "rmse_patch_median_c": 1.993,
+      "mae_pixel_weighted_c": 1.270,
+      "mae_patch_median_c": 1.164,
+      "r2_patch": "nan (per-patch SS_tot=0 on constant-target patches; pixel-weighted R² to be re-derived)",
+      "ssim_patch_mean": 0.8460,
+      "ssim_patch_median": 0.8607,
+      "elapsed_s": 434,
+      "notes": "Pixel-weighted RMSE matches paper headline 2.723 (within 0.002 rounding)."
+    },
+    {
+      "version": "V4",
+      "n_patches": 1176,
+      "pixel_count": 277337964,
+      "rmse_pixel_weighted_c": 2.278,
+      "rmse_patch_median_c": 1.607,
+      "mae_pixel_weighted_c": 0.974,
+      "mae_patch_median_c": 0.848,
+      "r2_patch": "nan (same reason as V3)",
+      "ssim_patch_mean": 0.8840,
+      "ssim_patch_median": 0.8972,
+      "elapsed_s": 508,
+      "notes": "Pixel-weighted RMSE matches paper headline 2.278 exactly."
+    }
+  ]
+}

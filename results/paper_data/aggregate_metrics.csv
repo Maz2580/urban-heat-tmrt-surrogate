@@ -1,0 +1,10 @@
+version,split,best_epoch,total_epochs,rmse_tmrt_c,mae_c,r2,ssim,rmse_lst_c,rmse_tair_c
+V1,val,100,101,4.33,1.72,0.577,0.931,,
+V1,test,100,101,4.16,1.63,0.586,0.956,,
+V1.1,val,,,,,,,,
+V2,val,135,200,4.766,1.675,0.612,note:0.978,,
+V2,test,,,,,,,,
+V3,val,81,100,2.968,,,,nan,nan
+V3,test,81,100,2.725,1.270,,note:0.8607,nan,nan
+V4,val,92,100,2.462,,,,1.733,nan
+V4,test,92,100,2.278,0.974,,note:0.8972,1.824,nan

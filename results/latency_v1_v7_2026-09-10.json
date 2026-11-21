@@ -1,0 +1,191 @@
+{
+ "meta": {
+  "onnxruntime": "1.21.1",
+  "numpy": "1.26.2",
+  "python": "3.11.14",
+  "host": "ebf8f980e81c",
+  "cpu_count": 16,
+  "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.41",
+  "protocol": "single 1xCx512x512 np.random.default_rng(0).random float32; 3 warm-up; 100 timed runs; CPUExecutionProvider",
+  "started": "2026-09-10 05:45:26"
+ },
+ "settings": {
+  "served_intra4_inter2": {
+   "intra_op": 4,
+   "inter_op": 2
+  },
+  "ort_default": {
+   "intra_op": null,
+   "inter_op": null
+  }
+ },
+ "results": {
+  "served_intra4_inter2": {
+   "V1": {
+    "channels": 5,
+    "median_ms": 274.1,
+    "p95_ms": 306.1,
+    "min_ms": 249.5,
+    "max_ms": 308.6,
+    "mean_ms": 280.7,
+    "sd_ms": 16.6
+   },
+   "V2": {
+    "channels": 11,
+    "median_ms": 287.0,
+    "p95_ms": 293.5,
+    "min_ms": 258.7,
+    "max_ms": 301.0,
+    "mean_ms": 283.7,
+    "sd_ms": 10.3
+   },
+   "V3": {
+    "channels": 12,
+    "median_ms": 175.1,
+    "p95_ms": 178.4,
+    "min_ms": 171.3,
+    "max_ms": 179.4,
+    "mean_ms": 174.9,
+    "sd_ms": 2.0
+   },
+   "V3.1": {
+    "channels": 12,
+    "median_ms": 177.7,
+    "p95_ms": 181.9,
+    "min_ms": 171.5,
+    "max_ms": 183.8,
+    "mean_ms": 177.8,
+    "sd_ms": 2.2
+   },
+   "V4": {
+    "channels": 23,
+    "median_ms": 191.3,
+    "p95_ms": 194.9,
+    "min_ms": 185.1,
+    "max_ms": 198.2,
+    "mean_ms": 191.1,
+    "sd_ms": 2.4
+   },
+   "V4.1": {
+    "channels": 23,
+    "median_ms": 193.3,
+    "p95_ms": 196.0,
+    "min_ms": 183.4,
+    "max_ms": 200.9,
+    "mean_ms": 192.4,
+    "sd_ms": 3.0
+   },
+   "V5": {
+    "channels": 23,
+    "median_ms": 187.4,
+    "p95_ms": 191.0,
+    "min_ms": 183.6,
+    "max_ms": 192.9,
+    "mean_ms": 187.7,
+    "sd_ms": 1.9
+   },
+   "V6": {
+    "channels": 23,
+    "median_ms": 193.1,
+    "p95_ms": 213.6,
+    "min_ms": 187.1,
+    "max_ms": 217.0,
+    "mean_ms": 195.4,
+    "sd_ms": 7.3
+   },
+   "V7": {
+    "channels": 23,
+    "median_ms": 191.8,
+    "p95_ms": 195.1,
+    "min_ms": 181.8,
+    "max_ms": 216.7,
+    "mean_ms": 191.8,
+    "sd_ms": 5.1
+   }
+  },
+  "ort_default": {
+   "V1": {
+    "channels": 5,
+    "median_ms": 275.7,
+    "p95_ms": 348.7,
+    "min_ms": 196.2,
+    "max_ms": 428.5,
+    "mean_ms": 261.1,
+    "sd_ms": 50.1
+   },
+   "V2": {
+    "channels": 11,
+    "median_ms": 270.3,
+    "p95_ms": 324.8,
+    "min_ms": 178.0,
+    "max_ms": 471.4,
+    "mean_ms": 269.6,
+    "sd_ms": 44.6
+   },
+   "V3": {
+    "channels": 12,
+    "median_ms": 108.1,
+    "p95_ms": 185.4,
+    "min_ms": 97.0,
+    "max_ms": 285.1,
+    "mean_ms": 121.7,
+    "sd_ms": 31.4
+   },
+   "V3.1": {
+    "channels": 12,
+    "median_ms": 106.4,
+    "p95_ms": 154.3,
+    "min_ms": 79.4,
+    "max_ms": 241.4,
+    "mean_ms": 113.8,
+    "sd_ms": 23.5
+   },
+   "V4": {
+    "channels": 23,
+    "median_ms": 86.9,
+    "p95_ms": 138.0,
+    "min_ms": 78.0,
+    "max_ms": 322.0,
+    "mean_ms": 98.0,
+    "sd_ms": 31.6
+   },
+   "V4.1": {
+    "channels": 23,
+    "median_ms": 86.2,
+    "p95_ms": 142.9,
+    "min_ms": 79.9,
+    "max_ms": 166.7,
+    "mean_ms": 94.2,
+    "sd_ms": 18.5
+   },
+   "V5": {
+    "channels": 23,
+    "median_ms": 79.9,
+    "p95_ms": 146.1,
+    "min_ms": 75.3,
+    "max_ms": 294.9,
+    "mean_ms": 93.3,
+    "sd_ms": 31.5
+   },
+   "V6": {
+    "channels": 23,
+    "median_ms": 98.5,
+    "p95_ms": 151.4,
+    "min_ms": 82.7,
+    "max_ms": 234.3,
+    "mean_ms": 107.0,
+    "sd_ms": 23.7
+   },
+   "V7": {
+    "channels": 23,
+    "median_ms": 99.7,
+    "p95_ms": 161.5,
+    "min_ms": 85.4,
+    "max_ms": 279.2,
+    "mean_ms": 111.3,
+    "sd_ms": 30.4
+   }
+  }
+ },
+ "note": "values parsed from latency_bench_2026-09-10.log (the in-container file write hit a permission error after all measurements completed)"
+}

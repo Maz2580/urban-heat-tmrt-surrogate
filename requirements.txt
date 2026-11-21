@@ -1,0 +1,7 @@
+# Running the released models (quick start)
+numpy
+onnxruntime
+
+# Re-running the pipeline additionally needs (see README, "Notes for re-running the pipeline"):
+# pandas scipy rasterio pyproj shapely matplotlib pillow torch torchvision segmentation-models-pytorch earthengine-api requests
+# label regeneration for V5 to V7: solweig-gpu==1.2.21

@@ -1,0 +1,32 @@
+{"onnxruntime": "1.21.1", "numpy": "1.26.2", "python": "3.11.14", "host": "ebf8f980e81c", "cpu_count": 16, "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.41", "protocol": "single 1xCx512x512 np.random.default_rng(0).random float32; 3 warm-up; 100 timed runs; CPUExecutionProvider", "started": "2026-09-10 05:45:26"}
+  served_intra4_inter2   V1    C= 5 median   274.1 ms  p95   306.1  min  249.5  max  308.6  mean 280.7±16.6
+  served_intra4_inter2   V2    C=11 median   287.0 ms  p95   293.5  min  258.7  max  301.0  mean 283.7±10.3
+  served_intra4_inter2   V3    C=12 median   175.1 ms  p95   178.4  min  171.3  max  179.4  mean 174.9±2.0
+  served_intra4_inter2   V3.1  C=12 median   177.7 ms  p95   181.9  min  171.5  max  183.8  mean 177.8±2.2
+  served_intra4_inter2   V4    C=23 median   191.3 ms  p95   194.9  min  185.1  max  198.2  mean 191.1±2.4
+  served_intra4_inter2   V4.1  C=23 median   193.3 ms  p95   196.0  min  183.4  max  200.9  mean 192.4±3.0
+  served_intra4_inter2   V5    C=23 median   187.4 ms  p95   191.0  min  183.6  max  192.9  mean 187.7±1.9
+  served_intra4_inter2   V6    C=23 median   193.1 ms  p95   213.6  min  187.1  max  217.0  mean 195.4±7.3
+  served_intra4_inter2   V7    C=23 median   191.8 ms  p95   195.1  min  181.8  max  216.7  mean 191.8±5.1
+  ort_default            V1    C= 5 median   275.7 ms  p95   348.7  min  196.2  max  428.5  mean 261.1±50.1
+  ort_default            V2    C=11 median   270.3 ms  p95   324.8  min  178.0  max  471.4  mean 269.6±44.6
+  ort_default            V3    C=12 median   108.1 ms  p95   185.4  min   97.0  max  285.1  mean 121.7±31.4
+  ort_default            V3.1  C=12 median   106.4 ms  p95   154.3  min   79.4  max  241.4  mean 113.8±23.5
+  ort_default            V4    C=23 median    86.9 ms  p95   138.0  min   78.0  max  322.0  mean 98.0±31.6
+  ort_default            V4.1  C=23 median    86.2 ms  p95   142.9  min   79.9  max  166.7  mean 94.2±18.5
+  ort_default            V5    C=23 median    79.9 ms  p95   146.1  min   75.3  max  294.9  mean 93.3±31.5
+  ort_default            V6    C=23 median    98.5 ms  p95   151.4  min   82.7  max  234.3  mean 107.0±23.7
+  ort_default            V7    C=23 median    99.7 ms  p95   161.5  min   85.4  max  279.2  mean 111.3±30.4
+Traceback (most recent call last):
+  File "/app/scripts/urban_heat/paper_figs/bench_onnx_latency.py", line 71, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/app/scripts/urban_heat/paper_figs/bench_onnx_latency.py", line 61, in main
+    (OUT / f"latency_v1_v7_{stamp}.json").write_text(json.dumps({"meta": meta, "settings": {k: {"intra_op": v[0], "inter_op": v[1]} for k, v in SETTINGS.items()}, "results": res}, indent=1))
+  File "/usr/local/lib/python3.11/pathlib.py", line 1078, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/app/docs/report/urbanheat_model_improvement/paper/figures/data/latency_v1_v7_2026-09-10.json'

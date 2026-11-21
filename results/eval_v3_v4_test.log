@@ -1,0 +1,85 @@
+
+=== V3 eval ===
+Test rows: 1176 (from 987 v2_patch_ids)
+  100/1176 | 24.2s | running RMSE_pixel=1.880
+  200/1176 | 64.0s | running RMSE_pixel=2.381
+  300/1176 | 101.7s | running RMSE_pixel=2.464
+  400/1176 | 139.4s | running RMSE_pixel=2.624
+  500/1176 | 177.2s | running RMSE_pixel=2.725
+  600/1176 | 223.4s | running RMSE_pixel=2.843
+  700/1176 | 273.8s | running RMSE_pixel=3.080
+  800/1176 | 324.2s | running RMSE_pixel=3.065
+  900/1176 | 370.4s | running RMSE_pixel=3.023
+  1000/1176 | 396.5s | running RMSE_pixel=2.914
+  1100/1176 | 421.2s | running RMSE_pixel=2.810
+
+V3: 1176 patches, 277,337,964 px, 434s
+  RMSE px-wgt:    2.725 °C
+  RMSE patch-med: 1.993 °C
+  MAE  px-wgt:    1.270 °C
+  MAE  patch-med: 1.164 °C
+  R²   patch-mean:   nan
+  R²   patch-median: nan
+  SSIM patch-mean:   0.8460
+  SSIM patch-median: 0.8607
+
+=== V4 eval ===
+Test rows: 1176 (from 987 v2_patch_ids)
+  100/1176 | 28.1s | running RMSE_pixel=1.571
+  200/1176 | 77.3s | running RMSE_pixel=2.032
+  300/1176 | 117.7s | running RMSE_pixel=2.095
+  400/1176 | 172.3s | running RMSE_pixel=2.251
+  500/1176 | 221.1s | running RMSE_pixel=2.319
+  600/1176 | 270.4s | running RMSE_pixel=2.418
+  700/1176 | 328.6s | running RMSE_pixel=2.589
+  800/1176 | 384.8s | running RMSE_pixel=2.571
+  900/1176 | 432.1s | running RMSE_pixel=2.528
+  1000/1176 | 465.7s | running RMSE_pixel=2.437
+  1100/1176 | 491.6s | running RMSE_pixel=2.349
+
+V4: 1176 patches, 277,337,964 px, 508s
+  RMSE px-wgt:    2.278 °C
+  RMSE patch-med: 1.607 °C
+  MAE  px-wgt:    0.974 °C
+  MAE  patch-med: 0.848 °C
+  R²   patch-mean:   nan
+  R²   patch-median: nan
+  SSIM patch-mean:   0.8840
+  SSIM patch-median: 0.8972
+
+=== SUMMARY ===
+[
+  {
+    "version": "V3",
+    "n_patches": 1176,
+    "pixel_count": 277337964,
+    "rmse_pixel": 2.725159899887476,
+    "rmse_patch_median": 1.9934546947479248,
+    "mae_pixel": 1.2695965552602986,
+    "mae_patch_median": 1.163780927658081,
+    "r2_patch_mean": NaN,
+    "r2_patch_median": NaN,
+    "ssim_patch_mean": 0.8459962518408667,
+    "ssim_patch_median": 0.8606610809166767,
+    "elapsed_s": 434.3762948513031
+  },
+  {
+    "version": "V4",
+    "n_patches": 1176,
+    "pixel_count": 277337964,
+    "rmse_pixel": 2.2777845539515473,
+    "rmse_patch_median": 1.6074790358543396,
+    "mae_pixel": 0.9740492761566568,
+    "mae_patch_median": 0.8476794064044952,
+    "r2_patch_mean": NaN,
+    "r2_patch_median": NaN,
+    "ssim_patch_mean": 0.8840241497407233,
+    "ssim_patch_median": 0.8971608465633467,
+    "elapsed_s": 507.7462041378021
+  }
+]
+Traceback (most recent call last):
+  File "/app/docs/report/urbanheat_model_improvement/scratch/offline_eval.py", line 113, in <module>
+    with open(OUT_PATH, 'w') as f:
+         ^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/app/docs/report/urbanheat_model_improvement/scratch/offline_eval_results.json'

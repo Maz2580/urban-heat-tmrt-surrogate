@@ -1,0 +1,19 @@
+{
+  "patches": 482,
+  "source": "<project root>/urban_heat_data/v4_prep/shadow_multi_v7",
+  "world": "2018 LiDAR everywhere (dsm_1m)",
+  "slots": {
+    "0": "dsm_2018",
+    "10": "shade_age (per sample hour)",
+    "17": "shadow_h09",
+    "18": "shadow_h13",
+    "19": "shadow_h16"
+  },
+  "age_hours": [
+    9,
+    11,
+    13,
+    15
+  ],
+  "size_px": 512
+}

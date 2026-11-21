@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Urban heat T_mrt surrogate: code and records for 'Spatial data provenance in simulator-trained surrogates: four failure modes that accuracy metrics could not detect'"
+type: software
+license: MIT
+repository-code: "https://github.com/Maz2580/urban-heat-tmrt-surrogate"
+authors:
+  - family-names: Chen
+    given-names: Yiqun
+    affiliation: "The University of Melbourne"
+  - family-names: Ghasemi Tootkaboni
+    given-names: Mazdak
+    affiliation: "The University of Melbourne"
+  - family-names: Kesminas
+    given-names: Alice
+    affiliation: "The University of Melbourne"
+  - family-names: Rajabifard
+    given-names: Abbas
+    affiliation: "The University of Melbourne"
+version: "1.0"
+date-released: "2026-11-22"
+preferred-citation:
+  type: article
+  title: "Spatial data provenance in simulator-trained surrogates: four failure modes that accuracy metrics could not detect"
+  authors:
+    - family-names: Chen
+      given-names: Yiqun
+    - family-names: Ghasemi Tootkaboni
+      given-names: Mazdak
+    - family-names: Kesminas
+      given-names: Alice
+    - family-names: Rajabifard
+      given-names: Abbas

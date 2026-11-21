@@ -1,0 +1,25 @@
+[2026-08-15 08:50:20] === Stage C: reference-SOLWEIG label regeneration ===
+[2026-08-15 08:50:24] device: Tesla T4 (cuda=True)
+[2026-08-15 08:50:28] preflight ERA5: 12 combos checked (corpus hour H vs local H+1), worst |diff| 0.00 C
+[2026-08-15 08:50:31] leaf season (97, 300) -> (274, 120) [southern hemisphere]
+[2026-08-15 08:50:32] 1 patches x 5 DOYs in ONE call each = 1 runs, 120 bands per output
+[2026-08-15 08:56:38] first patch (5 dates) 360s on 2 cores
+[2026-08-15 08:56:38]   = 72s per date. Reference: T4 103, A100 100, 14-core CPU ~60. Not GPU-bound; a bigger GPU will not help.
+[2026-08-15 08:56:38] projected full run: 1 patches x 360s = 0.1 h
+[2026-08-15 08:56:39] leaf check: local hour 10 — intermediate shadow values [0.029999999329447746] (canopy px=14128)
+[2026-08-15 08:56:39] leaf check: CONFIRMED leaf-on (0.03) in the written output
+[2026-08-15 08:56:39] [1/1] patch_0013 (5 dates) OK 360s (ok 1 fail 0 skip 0)
+[2026-08-15 08:56:39] === complete: ok 1, failed 0, skipped 0 ===
+[2026-08-15 08:56:39] NEXT: run analyse_spatial.py on a sample of these outputs and confirm Spearman is still ~0.91. The GPU is a different code path; nothing validated on CPU transfers for free.
+[2026-08-15 09:04:31] === Stage C: reference-SOLWEIG label regeneration ===
+[2026-08-15 09:04:32] device: Tesla T4 (cuda=True)
+[2026-08-15 09:04:32] preflight ERA5: 12 combos checked (corpus hour H vs local H+1), worst |diff| 0.00 C
+[2026-08-15 09:04:34] leaf season (97, 300) -> (274, 120) [southern hemisphere]
+[2026-08-15 09:04:34] 482 patches x 5 DOYs in ONE call each = 482 runs, 120 bands per output
+[2026-08-15 09:17:17] first patch (5 dates) 746s on 2 cores
+[2026-08-15 09:17:17]   = 149s per date. Reference: T4 103, A100 100, 14-core CPU ~60. Not GPU-bound; a bigger GPU will not help.
+[2026-08-15 09:17:17] projected full run: 482 patches x 746s = 99.9 h
+[2026-08-15 09:17:17] leaf check: local hour 10 — intermediate shadow values [0.029999999329447746] (canopy px=24281)
+[2026-08-15 09:17:17] leaf check: CONFIRMED leaf-on (0.03) in the written output
+[2026-08-15 09:17:17] [2/482] patch_0014 (5 dates) OK 746s (ok 1 fail 0 skip 1)
+[2026-08-15 09:30:13] [3/482] patch_0015 (5 dates) OK 769s (ok 2 fail 0 skip 1)

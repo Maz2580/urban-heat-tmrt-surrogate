@@ -1,0 +1,44 @@
+{
+  "tag": "v7_smoke",
+  "ckpt": "stage_d\\models\\v7_best.pt",
+  "corpus": "stage_d\\out_v7",
+  "gate": "PASS",
+  "baseline_rmse": 3.7748533812609417,
+  "rows": {
+    "baseline": {
+      "rmse_all": 3.7748533812609417,
+      "rmse_shade": 5.202704084564383,
+      "mean_dpred_shade": 0.0
+    },
+    "age := 0": {
+      "rmse_all": 6.352751873040483,
+      "rmse_shade": 14.393225316944543,
+      "mean_dpred_shade": 10.070963901249492
+    },
+    "age += 2h (shaded)": {
+      "rmse_all": 4.538837417801694,
+      "rmse_shade": 8.267845376286711,
+      "mean_dpred_shade": -4.204026589480924
+    },
+    "age := 8h (shaded)": {
+      "rmse_all": 5.696737929598797,
+      "rmse_shade": 11.429554476044322,
+      "mean_dpred_shade": -6.81710700229612
+    },
+    "planes := 0": {
+      "rmse_all": 3.944382110844936,
+      "rmse_shade": 5.312987158514405,
+      "mean_dpred_shade": -0.5965043230268483
+    },
+    "planes := 1": {
+      "rmse_all": 4.706008369669363,
+      "rmse_shade": 6.140023266656218,
+      "mean_dpred_shade": 1.252391863538942
+    },
+    "age:=0 & planes:=0": {
+      "rmse_all": 6.511410117730849,
+      "rmse_shade": 14.800068995146765,
+      "mean_dpred_shade": 10.182672634493203
+    }
+  }
+}
